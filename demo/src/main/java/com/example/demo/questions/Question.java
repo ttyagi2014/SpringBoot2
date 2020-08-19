@@ -22,6 +22,7 @@ import com.example.demo.questions.ans.Answer;
 @Table(name="question")
 @Component(value="quest")
 @Scope(value="prototype")
+
 public class Question {
 	
 	@Id
@@ -53,7 +54,7 @@ public class Question {
 	public void setQuestionName(String questionName) {
 		this.questionName = questionName;
 	}
-
+   
 	public List<Answer> getAnswer() {
 		return answer;
 	}

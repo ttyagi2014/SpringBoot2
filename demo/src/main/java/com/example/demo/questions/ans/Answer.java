@@ -6,7 +6,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
@@ -14,6 +13,7 @@ import org.springframework.stereotype.Component;
 @Table(name="answer")
 @Component(value="answ")
 @Scope(value="prototype")
+
 public class Answer {
 	
 	@Id
@@ -25,7 +25,7 @@ public class Answer {
 	
 
 	private String postedBy;
-
+  
 	public int getId() {
 		return id;
 	}
@@ -33,7 +33,7 @@ public class Answer {
 	public void setId(int id) {
 		this.id = id;
 	}
-
+	
 	public String getAnswerName() {
 		return answerName;
 	}

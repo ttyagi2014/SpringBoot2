@@ -52,7 +52,8 @@ public class DemoApplication {
 		bl.insert(q1);
 		bl.insert(q2);
 		}
-		
+		BusinnessLogic bl=ctx.getBean("businnessLogic",BusinnessLogic.class);
+		bl.find();
 		
 	}
 
