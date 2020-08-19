@@ -29,7 +29,7 @@ public class DemoApplication {
 		Question q2=ctx.getBean("quest", Question.class);
 		q2.setQuestionName("HIBERNATE FEATURES");
 		List<Answer> alist2=q2.getAnswer();
-		Answer a3=ctx.getBean("answ",Answer.class);
+		Answer a3=alist2.get(0);
 		Answer a4=ctx.getBean("answ",Answer.class);
 		Answer a5=ctx.getBean("answ",Answer.class);
 		a3.setAnswerName("ORM");
